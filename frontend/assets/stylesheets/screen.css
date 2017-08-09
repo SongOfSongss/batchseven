@@ -1,0 +1,578 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/header.scss */
+html body .page-head {
+  display: inline-flex;
+  align-items: center;
+  /* Makes the nav items and logo appear vertically centered with the search box*/
+  background-color: #2CA8C8;
+  height: 220px;
+  margin: 0px auto;
+  width: 100%;
+}
+/* line 14, ../sass/header.scss */
+html body .logo {
+  padding-left: 10%;
+  padding-right: 1%;
+  float: none;
+}
+/* line 20, ../sass/header.scss */
+html body .site-nav {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+/* line 25, ../sass/header.scss */
+html body .site-nav > ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 30px;
+}
+/* line 32, ../sass/header.scss */
+html body .site-nav__item {
+  display: inline;
+  color: #2CA8C8;
+  width: 80vw;
+}
+/* line 38, ../sass/header.scss */
+html body .search-field {
+  position: relative;
+}
+/* line 42, ../sass/header.scss */
+html body .search-field img {
+  position: absolute;
+  right: .5px;
+  top: 4px;
+}
+/* line 48, ../sass/header.scss */
+html body .search-box {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 230px;
+  height: 30px;
+  float: right;
+}
+
+/* line 3, ../sass/circles.scss */
+html body .circles {
+  list-style: none;
+  display: flex;
+  width: 30vw;
+  margin: auto;
+  min-width: 300px;
+  padding: 2% 0 3% 0;
+  position: relative;
+}
+/* line 15, ../sass/circles.scss */
+html body .first-circle {
+  border-radius: 50%;
+  background-color: #2CA8C8;
+  height: 70px;
+  width: 70px;
+  border: solid 15px #c1c1c1;
+  text-align: center;
+}
+/* line 24, ../sass/circles.scss */
+html body .second-circle {
+  margin: auto;
+  border: solid 15px  #d0d0d0;
+  border-radius: 50%;
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+}
+/* line 36, ../sass/circles.scss */
+html body .third-circle {
+  border: solid 15px  #d0d0d0;
+  background-color: white;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  float: right;
+  text-align: center;
+}
+/* line 47, ../sass/circles.scss */
+html body .span-first {
+  font-size: 70px;
+  color: white;
+}
+/* line 54, ../sass/circles.scss */
+html body .span-two {
+  font-size: 70px;
+  color: #2CA8C8;
+}
+/* line 60, ../sass/circles.scss */
+html body .span-three {
+  font-size: 70px;
+  color: #2CA8C8;
+}
+/* line 65, ../sass/circles.scss */
+html body .straight-line {
+  border: solid 8px #c1c1c1;
+  width: 25vw;
+  margin: auto;
+  background-color: #c1c1c1;
+  position: absolute;
+  left: 10%;
+  top: 41%;
+  z-index: -1;
+}
+
+/* line 4, ../sass/firstbody.scss */
+html body span#paragraph {
+  text-align: center;
+}
+/* line 10, ../sass/firstbody.scss */
+html body .border {
+  border: solid 2px #d0d0d0;
+  margin: auto;
+  width: 50%;
+}
+/* line 16, ../sass/firstbody.scss */
+html body span#paragraph {
+  text-align: center;
+  padding: auto;
+  height: 50%;
+}
+/* line 22, ../sass/firstbody.scss */
+html body div#line-one {
+  color: #2CA8C8;
+  font-size: 5vw;
+}
+/* line 28, ../sass/firstbody.scss */
+html body div#line-two {
+  color: #2CA8C8;
+  font-size: 3vw;
+}
+/* line 34, ../sass/firstbody.scss */
+html body div#line-three {
+  color: #2CA8C8;
+  font-size: 2vw;
+}
+
+/* line 4, ../sass/aboutform.scss */
+html body .about-class {
+  margin: auto;
+  padding: auto;
+}
+/* line 9, ../sass/aboutform.scss */
+html body fieldset#fs1 {
+  background-color: #d0d0d0;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #2CA8C8;
+  border: none;
+  width: auto;
+  height: 400px;
+  display: table-cell;
+  padding: 15px;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 23, ../sass/aboutform.scss */
+html body header#h3 {
+  font-size: 40px;
+  text-align: left;
+}
+/* line 27, ../sass/aboutform.scss */
+html body input.ci1 {
+  font-size: 26px;
+  border-radius: 15px;
+  height: 50px;
+  width: 100%;
+}
+/* line 35, ../sass/aboutform.scss */
+html body label#l1 {
+  position: absolute;
+  width: 45%;
+}
+/* line 42, ../sass/aboutform.scss */
+html body label#l2 {
+  position: absolute;
+  right: 15px;
+  top: 56px;
+  width: 45%;
+}
+/* line 51, ../sass/aboutform.scss */
+html body button#next {
+  width: 15%;
+  border: 3px solid #2CA8C8;
+  padding: 10px;
+  color: white;
+  background-color: #2CA8C8;
+  margin: 20px 0 20px 37%;
+  border-radius: 10px;
+}
+/* line 63, ../sass/aboutform.scss */
+html body .input-label2 {
+  padding-top: 30px;
+  margin-top: 40px;
+  font-size: 30px;
+}
+/* line 71, ../sass/aboutform.scss */
+html body .input-label3 {
+  padding-top: 30px;
+  font-size: 30px;
+}
+/* line 76, ../sass/aboutform.scss */
+html body .last-name {
+  padding-top: 30px;
+  font-size: 30px;
+}
+/* line 83, ../sass/aboutform.scss */
+html body .first-name {
+  padding-top: 30px;
+  font-size: 30px;
+}
+/* line 87, ../sass/aboutform.scss */
+html body .back {
+  background-color: #2CA8C8;
+  border: solid 2px black;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 15%;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 29%;
+  height: 60px;
+}
+/* line 105, ../sass/aboutform.scss */
+html body .proceed {
+  background-color: #2CA8C8;
+  border: solid 2px black;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 15%;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 12%;
+  height: 60px;
+}
+
+/* line 3, ../sass/YourDonation.scss */
+html body .fs2 {
+  background-color: #d0d0d0;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #2CA8C8;
+  border: none;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+/* line 17, ../sass/YourDonation.scss */
+html body section {
+  background-color: white;
+  border-radius: 20px;
+  width: 89%;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+/* line 27, ../sass/YourDonation.scss */
+html body .payment-mode {
+  border: white;
+  border: solid 2px black;
+  list-style: none;
+  border: none;
+  display: inline-flex;
+  width: 50%;
+}
+/* line 38, ../sass/YourDonation.scss */
+html body .button {
+  background-color: #2CA8C8;
+  border: solid 2px black;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 50%;
+  cursor: pointer;
+  border-top-left-radius: 20px;
+}
+/* line 54, ../sass/YourDonation.scss */
+html body .credit-card {
+  background-color: white;
+  border: solid 2px black;
+  border: none;
+  color: #2CA8C8;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 50%;
+  cursor: pointer;
+  float: right;
+  border-top-right-radius: 20px;
+}
+/* line 72, ../sass/YourDonation.scss */
+html body .bank-account {
+  font-size: 26px;
+  border: none;
+  margin-left: 55px;
+}
+/* line 78, ../sass/YourDonation.scss */
+html body .needed-information {
+  width: 35%;
+  height: 30px;
+  border: solid 2px #d0d0d0;
+  border-radius: 7px;
+  color: #d0d0d0;
+  border: none;
+  background-color: #d0d0d0;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+/* line 92, ../sass/YourDonation.scss */
+html body .expiry-date {
+  font-size: 26px;
+  border: none;
+  margin-left: 55px;
+}
+/* line 97, ../sass/YourDonation.scss */
+html body .expiry {
+  width: 38%;
+  height: 30px;
+  border: solid 2px #d0d0d0;
+  border-radius: 7px;
+  color: #d0d0d0;
+  border: none;
+  background-color: #d0d0d0;
+  margin-left: 6px;
+  margin-bottom: 2%;
+}
+/* line 109, ../sass/YourDonation.scss */
+html body .card_logo {
+  float: right;
+  width: 200px;
+}
+/* line 114, ../sass/YourDonation.scss */
+html body .private-information {
+  width: 60%;
+  height: 30px;
+  border: solid 2px black;
+  border-radius: 7px;
+  border: none;
+  background-color: #d0d0d0;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+/* line 127, ../sass/YourDonation.scss */
+html body .proceed-back {
+  border: white;
+  border: solid 2px black;
+  list-style: none;
+  border: none;
+  display: inline-flex;
+  width: 100%;
+}
+
+/* line 3, ../sass/footer.scss */
+html body .footer {
+  margin-top: 20px;
+  border: solid 2px black;
+  border: none;
+  height: 180px;
+  background-color: #d0d0d0;
+}
+/* line 11, ../sass/footer.scss */
+html body .five-circles {
+  list-style: none;
+  display: inline-flex;
+  padding-left: 38%;
+}
+/* line 19, ../sass/footer.scss */
+html body .circlet {
+  width: 0%;
+  padding: auto;
+}
+/* line 24, ../sass/footer.scss */
+html body .empty-circles {
+  border: solid 10px  #d0d0d0;
+  background-color: white;
+  border-radius: 50px;
+  height: 45px;
+  width: 45px;
+  margin: auto;
+}
+/* line 33, ../sass/footer.scss */
+html body .last-line {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+/* line 42, ../sass/footer.scss */
+html body .footer-line {
+  display: inline;
+}
+/* line 47, ../sass/footer.scss */
+html body .copyright {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+/* line 3, ../sass/commentField.scss */
+html body .comment-box {
+  background-color: #d0d0d0;
+  border: solid 2px black;
+  border: none;
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+  height: 200px;
+  border-radius: 20px;
+  padding-bottom: 12%;
+}
+/* line 17, ../sass/commentField.scss */
+html body textarea {
+  width: 90%;
+  height: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+/* line 32, ../sass/commentField.scss */
+html body .comment-field {
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #2CA8C8;
+}
+/* line 39, ../sass/commentField.scss */
+html body .message {
+  margin-left: 35px;
+  color: #2CA8C8;
+  font-size: 20px;
+}
+/* line 46, ../sass/commentField.scss */
+html body .checkbox {
+  height: 20px;
+  width: 20px;
+  margin-left: 30px;
+  color: #2CA8C8;
+  border: solid 2px black;
+}
+/* line 55, ../sass/commentField.scss */
+html body .second-back {
+  background-color: #2CA8C8;
+  border: solid 2px black;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 15%;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 24%;
+  height: 60px;
+}
+/* line 73, ../sass/commentField.scss */
+html body .second-proceed {
+  background-color: #2CA8C8;
+  border: solid 2px black;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 15%;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 22%;
+  height: 60px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 720px) and (max-device-width: 480px) {
+  /* line 3, ../sass/_mediaQueries.scss */
+  .logo {
+    float: none;
+  }
+}
